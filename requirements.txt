@@ -1,0 +1,13 @@
+# Generation (GPU). Audio Flamingo 3 and Audio Flamingo Next are used through
+# their Hugging Face integrations, so a recent transformers is required.
+torch>=2.4
+transformers>=5.0.0
+librosa>=0.10
+soundfile>=0.12
+accelerate>=0.30
+tqdm>=4.66
+
+# Evaluation (CPU).
+jiwer>=3.0                 # evaluation/asr.py
+whisper-normalizer>=0.0.10 # evaluation/asr.py
+openai>=1.40               # evaluation/age_personalization_judge.py
